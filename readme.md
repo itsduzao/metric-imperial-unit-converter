@@ -3,7 +3,7 @@ MUST HAVE
 [ ] Round numbers down to three decimal places
 
 TODO
-[ ] create html structure
+[x] create html structure
 [ ] add css styles
 [ ] implement convert function
 [ ] update output display
