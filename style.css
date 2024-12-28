@@ -2,6 +2,7 @@
   --heading-bg: #6943FF;
   --heading-input-border-color: #B295FF;
   --heading-btn-font-color: #3D3D3D;
+  --heading-btn-hover-color: #e1e1e1;
 
   --output-container-bg: #1F2937;
   --output-wrapper-bg: #273549;
@@ -67,18 +68,26 @@ body {
     font-weight: 800;
     line-height: calc(24rem/16);
     text-align: center;
-    letter-spacing: calc(2rem/16);
     color: var(--white);
     background: transparent;
 
     width: clamp(1ch, 2ch, 6ch);
 
     padding: 6px 20px;
+
+    transition: 0.1s ease-in-out;
+
+    &:focus-within{
+      outline: 4px solid var(--output-title-color);
+      outline-offset: 2px;
+    }
   }
 
   &>button {
     border: none;
     border-radius: 5px;
+
+    cursor: pointer;
 
     font-family: inherit;
     font-weight: 500;
@@ -90,6 +99,17 @@ body {
     padding: 10px 28px;
     margin-top: 26px;
     margin-bottom: 34px;
+    
+    transition: 0.1s ease-in-out;
+
+    &:hover{
+      background-color: var(--heading-btn-hover-color);
+    }
+
+    &:focus-within{
+      outline: 4px solid var(--output-title-color);
+      outline-offset: 2px;
+    }
   }
 }
 
