@@ -22,7 +22,7 @@ Uma aplicação web para converter unidades métricas e imperiais, incluindo com
 ```markdown
 git clone https://github.com/itsduzao/metric-imperial-unit-converter.git
 ```
-2. Abra o arquivo index.html em um servidor local
+2. Abra o arquivo [`index.html`](index.html) em seu computador
 3. Digite o valor que deseja converter no campo de entrada
 4. Clique no botão "Convert" para ver os resultados
 
