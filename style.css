@@ -24,6 +24,7 @@ body {
   place-items: center;
 
   font-family: var(--primary-font);
+  background-color: #e1e1e1;
 }
 
 .main-container {
