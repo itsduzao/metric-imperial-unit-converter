@@ -70,9 +70,9 @@ body {
 
     padding: 6px 20px;
 
-    transition: 0.1s ease-in-out;
+    transition: 0.1s ease;
 
-    &:focus-within {
+    &:focus-visible {
       outline: 4px solid var(--output-title-color);
       outline-offset: 2px;
     }
@@ -106,13 +106,13 @@ body {
     margin-top: 26px;
     margin-bottom: 34px;
 
-    transition: 0.1s ease-in-out;
+    transition: 0.1s ease;
 
     &:hover {
       background-color: var(--heading-btn-hover-color);
     }
 
-    &:focus-within {
+    &:focus-visible {
       outline: 4px solid var(--output-title-color);
       outline-offset: 2px;
     }
