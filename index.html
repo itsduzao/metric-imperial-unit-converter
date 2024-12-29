@@ -19,23 +19,34 @@
     <div class="main-container" role="section" aria-label="Converter section">
       <div class="input-container">
         <h1 id="main-heading">Metric/Imperial Unit Conversion</h1>
-        <input type="number" value="20" min="0" aria-label="Enter value to convert" aria-describedby="main-heading" aria-valuenow="20" aria-valuemin="0" role="spinbutton">
-        <button aria-label="Convert units" type="button">Convert</button>
+        <input id="input-value" type="number" value="20" min="0" aria-label="Enter value to convert"
+          aria-describedby="main-heading" aria-valuenow="20" aria-valuemin="0" role="spinbutton">
+        <button id="btn-convert" aria-label="Convert units" type="button">Convert</button>
       </div>
       <div class="output-container" role="region" aria-label="Conversion results">
         <div class="output-wrapper">
           <h4 class="output-title">Length (Meter/Feet)</h4>
-          <p class="output-data"><span class="user-input" role="status" aria-live="polite" aria-atomic="true">20</span> meters = <span id="feet-output" role="status" aria-live="polite" aria-atomic="true">65.616</span> feet |
-            <span class="user-input" role="status" aria-live="off" aria-atomic="true">20</span> feet = <span id="meters-output" role="status" aria-live="polite" aria-atomic="true">6.096</span> meters</p>
+          <p class="output-data"><span class="user-input" role="status" aria-live="polite" aria-atomic="true">20</span>
+            meters = <span id="feet-output" role="status" aria-live="polite" aria-atomic="true">65.617</span> feet |
+            <span class="user-input" role="status" aria-live="off" aria-atomic="true">20</span> feet = <span
+              id="meters-output" role="status" aria-live="polite" aria-atomic="true">6.096</span> meters
+          </p>
         </div>
         <div class="output-wrapper">
           <h4 class="output-title">Volume (Liters/Gallons)</h4>
-          <p class="output-data"><span class="user-input" role="status" aria-live="polite" aria-atomic="true">20</span> liters = <span id="gallons-output" role="status" aria-live="polite" aria-atomic="true">5.284</span>
-            gallons | <span class="user-input" role="status" aria-live="off" aria-atomic="true">20</span> gallons = <span id="liters-output" role="status" aria-live="polite" aria-atomic="true">75.708</span> liters</p>
+          <p class="output-data"><span class="user-input" role="status" aria-live="polite" aria-atomic="true">20</span>
+            liters = <span id="gallons-output" role="status" aria-live="polite" aria-atomic="true">5.283</span>
+            gallons | <span class="user-input" role="status" aria-live="off" aria-atomic="true">20</span> gallons =
+            <span id="liters-output" role="status" aria-live="polite" aria-atomic="true">75.708</span> liters
+          </p>
         </div>
         <div class="output-wrapper">
           <h4 class="output-title">Mass (Kilograms/Pounds)</h4>
-          <p class="output-data"><span class="user-input" role="status" aria-live="polite" aria-atomic="true">20</span> kilos = <spolite>9.072</span> kilos</p>
+          <p class="output-data"><span class="user-input" role="status" aria-live="polite" aria-atomic="true">20</span>
+            kilos = <span id="pounds-output" role="status" aria-live="polite" aria-atomic="true">44.092</span> pounds |
+            <span class="user-input" role="status" aria-live="off" aria-atomic="true">20</span> pounds = <span
+              id="kilograms-output" role="status" aria-live="polite" aria-atomic="true">9.072</span> kilos
+          </p>
         </div>
       </div>
     </div>
