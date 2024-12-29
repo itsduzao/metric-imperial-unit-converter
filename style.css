@@ -9,6 +9,9 @@
   --output-title-color: #CCC1FF;
   --white: #f1f1f1;
 
+  --toast-error-background: #e00000;
+  --toast-border-color: #cc0000;
+
   --primary-font: 'Inter', 'Helvetica', sans-serif;
 }
 
@@ -67,7 +70,7 @@ body {
     color: var(--white);
     background: transparent;
 
-    width: clamp(1ch, 2ch, 6ch);
+    width: clamp(3ch, 4ch, 6ch);  
 
     padding: 6px 20px;
 
@@ -170,5 +173,48 @@ body {
 
       margin: 0;
     }
+  }
+}
+
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-family: var(--primary-font);
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 1000;
+  animation: slideIn 0.3s ease;
+}
+
+.toast-error {
+  background-color: var(--toast-error-background);
+  color: var(--white);
+  border-left: 4px solid var(--toast-border-color);
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.toast-fade-out {
+  animation: fadeOut 0.3s ease forwards;
+}
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
   }
 }
